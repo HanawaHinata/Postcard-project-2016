@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/edittext1"
+		android:layout_width="match_parent"
+		android:layout_height="0px"
+		android:text="/sdcard/数据包/about.bnvb"/>
+
+	<SeekBar
+		android:id="@+id/seekBar"
+		android:layout_width="400dp"
+		android:layout_height="0dp"/>
+
+	<Button
+		android:layout_height="0dp"
+		android:layout_width="0dp"
+		android:id="@+id/btn_pause"/>
+
+	<Button
+		android:layout_height="0dp"
+		android:layout_width="0dp"
+		android:id="@+id/btn_replay"/>
+
+	<Button
+		android:layout_height="0dp"
+		android:layout_width="0dp"
+		android:layout_gravity="right"
+		android:id="@+id/btn_stop"/>
+
+	<RelativeLayout
+		android:layout_height="170dp"
+		android:layout_width="wrap_content">
+
+		<LinearLayout
+			android:layout_height="110dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#7B10B0"
+			android:id="@+id/aboutLinearLayout1"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:id="@+id/aboutLinearLayout2">
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="10dp"/>
+
+			<ImageView
+				android:layout_height="80dp"
+				android:layout_width="80dp"
+				android:src="@drawable/icon"/>
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="10dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="关于 生日贺卡"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="_(._.)_这里告诉你是谁做了这么个东西"
+					android:textColor="#FFFFFF"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:layout_height="15px"
+		android:layout_width="match_parent"
+		android:src="@drawable/card_show_down"
+		android:scaleType="fitXY"/>
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<SurfaceView
+				android:id="@+id/sv"
+				android:layout_width="match_parent"
+				android:layout_height="650px"/>
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Play"
+				android:layout_gravity="right"
+				android:id="@+id/btn_play"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:text="制作参与者"
+				android:textColor="#EF0097"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="企划"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="(๑•̀ㅂ•́)و✧当然是可爱的饼"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="字幕/歌词制作"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="时雨初空字幕组"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="制作协力"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="芳文社、生日贺卡！制作委员会、TBS"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="Java支持"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="WayCool软件"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="音效原理支持"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="DOLBY(中国)音效研究与发展中心"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10px"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:layout_width="wrap_content"
+						android:text="界面设计"/>
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="http://Google.com/design"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:text="技术详情"
+				android:textColor="#EF0097"/>
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="开放源代码许可"
+				android:gravity="left|center_vertical"
+				android:id="@+id/opencodebtn"/>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="DOLBY开源许可"
+				android:gravity="left|center_vertical"
+				android:id="@+id/dolbyopencodebtn"/>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"/>
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="STAFF"
+				android:gravity="left|center_vertical"
+				android:id="@+id/staff_btn"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

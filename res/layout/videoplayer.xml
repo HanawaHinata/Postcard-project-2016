@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+
+	<RelativeLayout
+		android:layout_height="300dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_height="200dp"
+			android:layout_width="1080px"
+			android:src="@drawable/videoplayer_mainbac"
+			android:scaleType="fitXY"/>
+
+		<RelativeLayout
+			android:layout_height="100dp"
+			android:layout_width="match_parent"
+			android:layout_alignParentBottom="true">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_alignParentBottom="true"
+				android:gravity="right">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="时长：12分46秒"
+					android:layout_gravity="center_vertical"/>
+
+				<RelativeLayout
+					android:layout_height="150px"
+					android:layout_width="300px"
+					android:background="@drawable/play_btn_bac">
+
+					<Button
+						style="?android:attr/buttonBarButtonStyle"
+						android:id="@+id/btn_play"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="播放"
+						android:textColor="#FFFFFF"/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="@string/video_title"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="20dp"/>
+
+			<ImageView
+				android:layout_height="480px"
+				android:layout_width="320px"
+				android:src="@drawable/video_icon"
+				android:scaleType="fitXY"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:layout_height="15px"
+		android:layout_width="match_parent"
+		android:src="@drawable/card_show_down"
+		android:scaleType="fitXY"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="39dp"
+				android:layout_width="1080px"
+				android:text="@string/video_jianjie"
+				android:background="#E4EFDE"
+				android:gravity="center"
+				android:textColor="#538A2D"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/video_xiangxi"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="为本视频评分"/>
+
+				<RatingBar
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="您为什么要给出这个分数？"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:ems="10"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Button
+						style="?android:attr/buttonBarButtonStyle"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="提交"
+						android:id="@+id/uploadbtn"/>
+
+					<Button
+						style="?android:attr/buttonBarButtonStyle"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="取消"
+						android:textColor="#F900DE"
+						android:id="@+id/exitbtn"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

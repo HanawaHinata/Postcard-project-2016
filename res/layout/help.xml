@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<View
+		android:layout_height="3dp"
+		android:layout_width="match_parent"
+		android:background="#00B4FF"/>
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="1000px"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="帮助"
+				android:id="@+id/help_title"
+				android:textSize="37sp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="     前面这行字可以点，用于快速导航。"/>
+
+			<ImageView
+				android:layout_height="700px"
+				android:layout_width="match_parent"
+				android:src="@drawable/help_pic_01"
+				android:scaleType="fitXY"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="这里的东西并不多。你也可以在时间线内挨个看。这个没有硬性要求的(つд⊂)"/>
+
+			<ImageView
+				android:layout_height="700px"
+				android:layout_width="match_parent"
+				android:src="@drawable/help_pic_02"
+				android:scaleType="fitXY"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="音悦台也可以左右滑动看更多专辑的说～"/>
+
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@android:drawable/ic_delete"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="不过我需要补充一点，音乐播放的时候按返回键的话就回不了这个页面，但音乐不会中断。如果你一不小心按了返回键，到“设置&gt;应用&gt;生日贺卡”，强行停止即可。"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

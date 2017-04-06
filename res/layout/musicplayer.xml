@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/music_player_bacimg">
+
+	<RelativeLayout
+		android:layout_height="29dp"
+		android:layout_width="wrap_content"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="31dp"/>
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="@string/music_title"
+				android:textColor="#FFFFFF"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/album_title"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="300dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:scaleType="fitCenter"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal">
+
+		<com.happy.birthday.View.LyricView
+			android:id="@+id/LyricShow"
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_alignParentBottom="true"
+			android:gravity="center">
+
+			<Button
+				android:layout_height="50dp"
+				android:layout_width="51dp"
+				android:gravity="bottom"
+				android:id="@+id/play"
+				android:background="@drawable/play_btn"
+				android:onClick="onDropButtonClick"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/music_btn_search"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

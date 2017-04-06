@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#B447E4">
+
+	<RelativeLayout
+		android:layout_height="29dp"
+		android:layout_width="wrap_content"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="31dp"/>
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:text="音悦台"
+				android:textColor="#FFFFFF"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="放送列表"
+				android:textColor="#FFFFFF"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<HorizontalScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="#8C515151">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="1080px"/>
+
+				<ImageView
+					android:layout_height="720px"
+					android:layout_width="720px"
+					android:src="@drawable/album_kanna"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="@string/album_kanna_title"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/album_kanna"
+					android:textColor="#FFFFFF"/>
+
+				<Button
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="PLAY"
+					android:id="@+id/to_kanna_btn"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="1080px"/>
+
+				<ImageView
+					android:layout_height="720px"
+					android:layout_width="720px"
+					android:src="@drawable/album_saki"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="@string/album_saki_title"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/album_saki"
+					android:textColor="#FFFFFF"/>
+
+				<Button
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="PLAY"
+					android:id="@+id/to_saki_btn"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="1080px"/>
+
+				<ImageView
+					android:layout_height="720px"
+					android:layout_width="720px"
+					android:src="@drawable/album_hina"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="@string/album_hina_title"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/album_hina"
+					android:textColor="#FFFFFF"/>
+
+				<Button
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="PLAY"
+					android:id="@+id/to_hina_btn"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="1080px"
+				android:orientation="vertical"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="1080px"/>
+
+				<ImageView
+					android:layout_height="720px"
+					android:layout_width="720px"
+					android:src="@drawable/album_other"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="wrap_content"
+					android:text="@string/album_other_title"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/album_other"
+					android:textColor="#FFFFFF"/>
+
+				<Button
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="PLAY"
+					android:id="@+id/to_other_btn"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"/>
+
+	<ImageView
+		android:layout_height="52px"
+		android:layout_width="218px"
+		android:src="@drawable/dolby_icon_main"
+		android:layout_gravity="center"
+		android:scaleType="fitXY"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="杜比声学®提供技术支持"
+		android:textColor="#FFFFFF"
+		android:layout_gravity="center"/>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"/>
+
+</LinearLayout>
+
