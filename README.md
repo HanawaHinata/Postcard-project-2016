@@ -1,4 +1,4 @@
-# com.happy.birthday
+# Postcard project 2016
 2016年的生日贺卡主程序。版本号：V2016.04.08 build10052
 
 ## 概述
